@@ -49,8 +49,8 @@ class Song
     arr2 = arr1[1].split(".")
     
     song = self.new
-    song.name = arr2[0]
-    song.artist_name = arr1[0]
+    song.name = arr2[0].strip
+    song.artist_name = arr1[0].strip
     @@all << song 
     return song 
   end 
