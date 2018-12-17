@@ -44,6 +44,10 @@ class Song
     self.all.sort_by{|song| song.name}
   end 
     
+  def self.new_from_filename(name)
+    arr1 = name.split("-")
+    arr1[1].delete(".mp3")
+  end 
       
 
 end
