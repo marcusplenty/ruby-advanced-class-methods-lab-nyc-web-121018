@@ -56,6 +56,14 @@ class Song
   end 
   
   def self.create_from_filename(name)
+    arr1 = name.split("-")
+    arr2 = arr1[1].split(".")
+    
+    song = self.new
+    song.name = arr2[0].strip
+    song.artist_name = arr1[0].strip
+    @@all << song 
+    return song
     
   end 
       
