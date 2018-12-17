@@ -51,6 +51,7 @@ class Song
     song.name = arr1[1]
     song.artist_name = arr1[0]
     @@all << song 
+    return song 
   end 
       
 
